@@ -1,0 +1,83 @@
+Привіт) Домашнє завдання!!!
+
+Півторак Юрій Олександрович
+Нік в телеграмі : Yurii Pivtorak
+
+1) Посмотреть где я - pwd
+
+2) Создать папку - mkdir group_30_free
+
+3) Зайти в папку - cd group_30_free
+
+4) Создать 3 папки - mkdir Students Cities Informations
+
+5) Зайти в любую папку - cd Students
+
+6) Создать 5 файлов (3 txt, 2 json) -
+
+touch Pivtorak.txt Benington.txt Shinoda.txt lp.json lp2.json
+
+7) Создать 3 папки -  mkdir Kyiv Lviv Vinnitsya
+
+8) Вывести список содержимого папки - ls -la
+
+9) Открыть любой txt файл - vim Pivtorak.txt
+
+10) Написать туда что-нибудь, любой текст. - Pivtorak Y.O. was born 04.05.1992 in Dashiv town
+
+11) Сохранить и выйти - після введення тексту натиснути Enter і далі CTRL+C 
+
+12) Выйти из папки на уровень выше - Сd .. на два рівні cd ../..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку -
+
+mv Students/pivtorak.txt informations/pivtorak.txt - один файл
+
+mv Students/*.json Informations/ - всі файли одного типу
+
+mv pivtorak.txt Shinoda.txt Informations/ - перемістити кілька файлів
+
+mv pivtorak.txt Shinoda.txt ../../../Git перемістити файли у папку не на своєму рівні
+
+mv pivtorak.txt Shinoda.txt ../Cities/Vinnitsya - перемістити у папку яка знаходиться в іншій папці 
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку -
+
+cp pivtorak.txt Shinoda.txt ../Cities/Vinnitsya
+
+cp {pivtorak.txt,Shinoda.txt} ../Informations
+
+15) Найти файл по имени
+
+User@WIN-JJHPPS74THK MINGW64 /d/Testing/Git
+$ find . -name pivtorak.txt
+./group_30_free/Cities/pivtorak.txt
+./group_30_free/Informations/pivtorak.txt
+./group_30_free/Students/pivtorak.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+команда Ls -R демонструє вміст усіх папок в директорії та їх файли!!!
+grep -iwnr "London" ./* - знайти збіги по всіх файлах та папках в директорії
+grep "" pivtorak.txt - покаже файл в реальному часі 
+tail -f pivtorak.txt - буде дописувати новостворені нижні строки.
+
+17) вывести несколько первых строк из текстового файла
+
+head -n 2 Pivtorak.txt - вивести перші 2 рядки з файлу
+
+18) вывести несколько последних строк из текстового файла
+
+tail -n 2 Pivtorak.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+
+less pivtorak.txt - відкриє файл для перегляду, можна шукати щось, для виходу натиснути "Q"
+
+20) вывести дату и время
+
+date - ця команда виводить дату й час.
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
