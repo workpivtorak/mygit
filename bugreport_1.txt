@@ -1,0 +1,56 @@
+Defects to the site: Epicentrk.ua
+Student tester: Pivtorak Y.
+Id - D1
+Summary - Write an appeal: fill in the form with incorrect data
+Preconditions - Go to the site: epicentrk.ua
+Steps:
+1. scroll down the page
+2. press "write us a message"
+3. fill in the application form
+Expected results:
+Required data fields must be validated and the user notified of the defect
+Actual results:
+The fields "Name", "Phone" and "Order number" are not valid. The user can also enter an email with one character.
+Severity : Minor
+Priority : Low
+Type: logical
+System Environment : Windows 10 Pro 64-bit AMD Athlon II P360 Dual-Core Processor, 8,0GB RAM, AMD Mobility Radeon HD 5000 Series
+Attachment:...
+
+
+Id - D2
+Summary - Change of surname in the personal account
+Preconditions:
+1. Go to the site epicentrk.ua
+2. Have a registered user
+Steps:
+1. Log in to the user's personal account
+2. Sign in to the My Data tab
+3. Change the last name and click save
+Expected results:
+The "Last Name" input field should notify the user of an error when the user does not enter any data or enters only one character
+Actual results:
+The Last Name field allows the user to keep the field blank or enter only one character
+Severity: Minor
+Priority: Low
+Type: Logical
+System Environment : Windows 10 Pro 64-bit AMD Athlon II P360 Dual-Core Processor, 8,0GB RAM, AMD Mobility Radeon HD 5000 Series
+Attachment:...
+
+Id - D3
+Summary - Change of localization while viewing the product
+Preconditions: Go to the site epicentrk.ua
+Steps:
+1. Open the directory
+2. Open "Products"
+3. Open "Meat and meat products"
+4. Open "Meat products"
+5. Open "Marinated meat for barbecue"
+Expected results:
+The language on the site should change according to the chosen localization
+Actual results:
+There is a cross-localization defect, in Ukrainian product description in Russian, and in Russian product description in Ukrainian
+Severity: Major
+Priority: Low
+Type: Localization
+System Environment: Windows 10 Pro 64-bit AMD Athlon II P360 Dual-Core Processor, 8,0GB RAM, AMD Mobility Radeon HD 5000 Series
