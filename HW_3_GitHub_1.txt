@@ -1,0 +1,690 @@
+Привіт) Дякую за перевірку мого домашнього завдання!!!
+ Півторак Юрій Олександрович
+ Нік в телеграмі : Yurii Pivtorak
+Посилання: https://github.com/workpivtorak
+ Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+ Создан аккаунт в GitHub
+
+ Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+ Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+ Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+ JSON
+ 4. Создать внешний репозиторий c названием JSON.
+   Зайти на сайт: https://github.com/workpivtorak.
+    Створити Новий репозиторій "JSON"
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+   git clone git@github.com:workpivtorak/JSON.git
+Cloning into 'JSON'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ 6. Внутри локального JSON создать файл “new.json”.
+   touch new.json
+
+ 7. Добавить файл под гит.
+   git add .
+ 
+ 8. Закоммитить файл.
+   git commit -m "add new.json"
+[main e226f05] add new.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+    git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 143.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/JSON.git
+   eb2a3f3..e226f05  main -> main
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+    cat new.json
+{
+ "biography":{
+
+         "My_biography":{
+
+               "name":"Yurii",
+               "surname":"Pivtorak",
+               "age":"30",
+               "married":"True"
+},
+          "My_residence":{
+               "country":"Ukraine",
+               "region":"Vinnitsya",
+               "city":"Illintsi",
+               "street":"Lisova",
+               "house_number":"17"
+},
+
+         "My_family":{
+               "wife":"True",
+               "name_wife":"Galina",
+               "age_wife":"32",
+               "childrens_count":"2",
+               "name_doughter":"Nika",
+               "age_doughter":"11",
+               "son_name":"Yegor",
+               "age_son":"4",
+               "dog_count":"1",
+               "name_dog":"S'oma"
+},
+         "My_experience":{
+               "profession":"Qa",
+               "year":"2021",
+               "work":"freelancer",
+               "level":"beginner",
+               "adapt":"Hight",
+               "payment":"500"
+  }
+ }
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+     git add .
+warning: LF will be replaced by CRLF in new.json.
+The file will have its original line endings in your working directory
+     git commit -m "add inormation in file new.json"
+[main a1d4bc9] add inormation in file new.json
+ 1 file changed, 40 insertions(+)
+     git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 647 bytes | 647.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/JSON.git
+   e226f05..a1d4bc9  main -> main
+
+ 12. Создать файл preferences.json
+      touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+      cat > preferences.json
+{
+  "preferences": {
+        "My_preferences": {
+                "films": "True",
+                        "films_count": "3",
+                        "name": "Time",
+                        "parth_f": "null",
+                        "year": "2011",
+                        "name_f2": "Forsage",
+                        "parth_f2": "1",
+                        "year_f2": "2001",
+                        "name_f3": "Interstellar",
+                        "year_f3": "2014",
+                "food": "True ",
+                        "dishes_count": "2",
+                        "name_d": "Pizza",
+                        "cheez_count": "2",
+                        "meet_count": "3",
+                        "souce": "many",
+                        "name_d2": "chicken",
+                        "cook": "wife",
+                        "sweet": "True",
+                        "parth": "wings",
+                        "garnish": "fig",
+                "travel": "True",
+                        "bike": "True",
+                        "bus": "True",
+                        "train": "True",
+                        "car": "True",
+                        "season": "spring",
+                        "country": "USA"
+                }
+        }
+}
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+      cat >> skills.json
+      {
+	"skills": {
+		"My_skills": {
+			"Theory": {
+				"testing": "True",
+				"bug_reports": "True",
+				"documentation": "True",
+				"types": "True",
+				"methods": "True",
+				"areas_of_testing": "True",
+				"SCRUM": "True",
+				"SDLC": "True",
+				"STLC": "True",
+				"client_server": "True",
+				"logs": "True"
+			},
+			"HTTP": {
+				"methods_of_requests": "True",
+				"response_codes": "True",
+				"strucrures": "True",
+				"Charles_app": "True",
+				"Fidler_app": "True",
+				"JSON": "True",
+				"structure_json": "True",
+				"XML": "True",
+				"structure_xml": "True"
+			},
+			"API": {
+				"Postman": "True",
+				"autotests": "True",
+				"Dev_tools": "True",
+				"Google_Crome": "True",
+				"Firefox": "True",
+				"VPN": "True"
+			},
+			"Mobile_testing": {
+				"IOS": "True",
+				"XCode": "True",
+				"proxy": "True",
+				"Charles": "True",
+				"Fidler": "True",
+				"Android": "True",
+				"Android_studio": {
+					"ADB": "True",
+					"proxy": "True",
+					"Charles": "True",
+					"Fidler": "True"
+				}
+			},
+			"Terminal_linux": {
+				"copying": "True",
+				"creating": "True",
+				"viewing": "True",
+				"moving_files": "True",
+				"bash_scripting": "True",
+				"Level": "Beginner"
+			},
+			"SQL": {
+				"Create": "True",
+				"Delete": "True",
+				"Drop": "True",
+				"Insert": "True",
+				"Select": "True",
+				"Where": "True",
+				"Join": "True",
+				"Postgres_database": "True",
+				"installation": "True",
+				"configuration": "True",
+				"Non-relational_database_Redis": "True"
+			},
+			"Jmeter": "True",
+			"Python": "True",
+			"Learnin_basics": "True"
+
+		}
+	}
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+     git add . && git commit -m "add skills.json and preferences.json"
+warning: LF will be replaced by CRLF in preferences.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.json.
+The file will have its original line endings in your working directory
+[main 01daddd] add skills.json and preferences.json
+ 2 files changed, 111 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 skills.json
+      git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.11 KiB | 567.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/JSON.git
+   a1d4bc9..01daddd  main -> main
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+    Зайти в репозиторій "JSON" та натиснути "Add file"
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+    Відкрити файл bug_report.json натиснути "Edit this file"
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+    Відредагувати файл bug_report.json
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+    Після редагування файлу bug_report.json натиснути "Commit changes"
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+     git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.98 KiB | 0 bytes/s, done.
+From github.com:workpivtorak/JSON
+   01daddd..58d4cd8  main       -> origin/main
+     git pull
+Updating 01daddd..58d4cd8
+Fast-forward
+ bug_report.json | 81 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 81 insertions(+)
+ create mode 100644 bug_report.json
+
+ XML
+ 21. Создать внешний репозиторий c названием XML.
+    Зайти на сайт: https://github.com/workpivtorak.
+    Створити Новий репозиторій "XML".
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+        git clone git@github.com:workpivtorak/XML.git
+    Cloning into 'XML'...
+    remote: Enumerating objects: 3, done.
+    remote: Counting objects: 100% (3/3), done.
+    remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    Receiving objects: 100% (3/3), done.
+
+ 23. Внутри локального XML создать файл “new.xml”.
+    touch new.xml
+
+ 24. Добавить файл под гит.
+    git add new.xml
+
+ 25. Закоммитить файл.
+      git commit -m "add new.xml"
+   [main 22abdae] add new.xml
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 new.xml
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+        git push
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 2 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 283 bytes | 141.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    To github.com:workpivtorak/XML.git
+       903398c..22abdae  main -> main
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     cat >> new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<biography>
+   <!-- My biography -->
+      <!-- about me -->
+         <name>Yurii</name>
+         <surname>Pivtorak</surname>
+         <age>30</age>
+         <married>True</married>
+         <residence>
+           <country>Ukraine</country>
+           <region>Vinnitsya</region>
+           <city>Illintsi</city>
+           <street>Lisova</street>
+           <house number="17">
+         </residence>
+      <!-- about family -->
+         <wife>
+           <name>Galina</name>
+           <age>32</age>
+         </wife>
+         <childrens count="2">
+         <doughter>
+           <name>Nika</name>
+           <age>11</age>
+         </doughter>
+         <son>
+           <name>Yegor</name>
+           <age>4</age>
+         </son>
+         <dog count="1">
+         <name>Semya</name>
+      <!-- about experience -->
+         <profession>Qa</profession>
+         <year>2021</year>
+         <work>freelancer</work>
+         <level>beginner</level>
+         <adapt>Hight</adapt>
+         <payment>500$</payment>
+</biography>
+
+ 28. Отправить изменения на внешний репозиторий.
+     git add .
+warning: LF will be replaced by CRLF in new.xml.
+The file will have its original line endings in your working directory
+     git commit -m "add new.xml"
+[main 26b2168] add new.xml
+ 1 file changed, 39 insertions(+)
+     git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 706 bytes | 353.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/XML.git
+   22abdae..26b2168  main -> main
+
+ 29. Создать файл preferences.xml
+    touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+      cat > preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+   <!-- My preferences -->
+      <!-- about films -->
+        <films>True</films>
+        <films count="3">
+           <name>Time</name>
+              <parth null ="true"/>
+              <year>2011</year>
+           <name>Forsage</name>
+              <parth>1</parth>
+              <year>2001</year>
+           <name>Interstellar</name>
+              <parth></parth>
+              <year>2014</year>
+           <film></film>
+           <film></film>
+      <!-- about food -->
+         <dishes>
+            <name>Pizza</name>
+               <cheez>2</chezz>
+               <meet count="3">
+               <souce>many</souce>
+            <name>chicken</name>
+               <cook>wife</cook>
+               <sweet>True</sweet>
+               <parth>wings</parth>
+            <garnish>fig</garnish>
+         </dishes>
+      <!-- about travel -->
+         <bike>True</bike>
+         <bus>True</bus>
+         <train>True</train>
+         <car>True</car>
+         <season>spring</season>
+         <country>USA</country>
+</preferences>
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+     cat >> skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+   <!-- My skills -->
+      <!-- Theory -->
+        <testing>True</testing>
+        <bug_reports>True</bug_reports>
+        <documentation>True</documentation>
+        <types>True</types>
+        <methods>True</methods>
+        <areas_of_testing>True<areas_of_testing>
+        <SCRUM>True</SCRUM>
+        <SDLC>True</SDLC>
+        <STLC>True</STLC>
+        <client_server>True</client_server>
+              <logs>True</logs>
+        <HTTP>True</HTTP>
+              <methods_of_requests>True</methods_of_requests>
+              <response_codes>True</response_codes>
+              <strucrures>True</structures>
+              <Charles>True</Charles>
+              <Fidler>True</Fidler>
+        <JSON>True</JSON>
+              <structure>True</structure>
+        <XML>True</XML>
+              <structure>True</structure>
+        <API>True</API>
+              <Postman>True</Postman>
+              <autotests>True</autotests>
+        <Dev_tools>True</Dev_tools>
+              <Google_Crome>True</Google_Crome>
+              <Firefox>True</Firefox>
+        <VPN>True</VPN>
+        <Mobile_testing>True</Mobile_testing>
+              <IOS>True</IOS>
+                   <XCode>True</XCode>
+                   <proxy>True</proxy>
+                   <Charles>True</Charles>
+                   <Fidler>True</Fidler>
+              <Android>True</Android>
+                   <Android_studio></Android_studio>
+                   <ADB>True</ADB>
+                   <proxy>True</proxy>
+                   <Charles>True</Charles>
+                   <Fidler>True</Fidler>
+        <Terminal_linux>True</Terminal_linux>
+              <copying>True</copying>
+              <creating>True</creating>
+              <viewing>True</viewing>
+              <moving_files>True</moving_files>
+              <bash_scripting>True</bash_scripting>
+                    <Level>Beginner</Level>
+        <SQL>True</SQL>
+              <Create>True</Create>
+              <Delete>True</Delete>
+              <Drop>True</Drop>
+              <Insert>True</Insert>
+              <Select>True</Select>
+              <Where>True</Where>
+              <Join>True</Join>
+        <Postgres_database>True</Postgres_database>
+              <installation>True</installation>
+              <configuration>True</configuration>
+        <Non-relational_database_Redis>True</Non-relational_database_Redis>
+        <Jmeter>True</Jmeter>
+        <Python>True</Python>
+              <Learning_basics>True</Learning_basics>
+</skills>
+
+ 32. Сделать коммит в одну строку.
+        git add . && git commit -m "add skills.xml and preferences.xml"
+warning: LF will be replaced by CRLF in preferences.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.xml.
+The file will have its original line endings in your working directory
+[main e3f20c0] add skills.xml and preferences.xml
+ 2 files changed, 104 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 skills.xml
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+   git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.41 KiB | 721.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/XML.git
+   26b2168..e3f20c0  main -> main
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+  Зайти в репозиторій "XML" та натиснути "Add file"
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+  Відкрити файл bug_report.xml натиснути "Edit this file"
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+  Відредагувати файл - додати баг репорт.
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+    Після редагування натиснути "Commit changes"
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+   Увійти в термінал та ввести:
+   git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.98 KiB | 0 bytes/s, done.
+From github.com:workpivtorak/XML
+   e3f20c0..f9af617  main       -> origin/main
+   git pull
+Updating e3f20c0..f9af617
+Fast-forward
+ bug_report.xml | 74 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 74 insertions(+)
+ create mode 100644 bug_report.xml
+
+ TXT
+ 1. Создать внешний репозиторий c названием TXT.
+    Зайти на сайт: https://github.com/workpivtorak.
+    Створити Новий репозиторій "TXT".
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+     git clone git@github.com:workpivtorak/TXT.git
+   Cloning into 'TXT'...
+   remote: Enumerating objects: 3, done.
+   remote: Counting objects: 100% (3/3), done.
+   remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+   Receiving objects: 100% (3/3), done.
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+    touch new.txt
+
+ 4. Добавить файл под гит.
+    git add . (файл лише один тому через крапку)
+
+ 5. Закоммитить файл.
+      git commit -m "add new.txt"
+    [main 97db822] add new.txt
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 new.txt
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+      git push
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 2 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    To github.com:workpivtorak/TXT.git
+       bb451ba..97db822  main -> main
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
+   Всё написать в формате TXT.
+     cat >> new.txt
+   Hi! My name is Yurii. I am 30.
+   I am from Illintsy, thats town in Vinnitsya region in Ukraine.
+   I am the father of two children. We have 2 dogs in our family.
+   I am a Qa/Qc tester since 2021 and i work a freelancer.
+   I don't have much experience, but I learn quickly and easily adapt to working in a team.
+   As for me, for a start, I would like a salary of 500$.
+   I want to note that for me the opportunity to gain real experience is important.
+    
+ 8. Отправить изменения на внешний репозиторий.
+       - git add new.txt
+   warning: LF will be replaced by CRLF in new.txt.
+   The file will have its original line endings in your working directory
+       - git commit -m "modified new.txt"
+   [main 6a6c65f] modified new.txt
+    1 file changed, 8 insertions(+)
+       - git push
+   Enumerating objects: 5, done.
+   Counting objects: 100% (5/5), done.
+   Delta compression using up to 2 threads
+   Compressing objects: 100% (3/3), done.
+   Writing objects: 100% (3/3), 570 bytes | 285.00 KiB/s, done.
+   Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+   To github.com:workpivtorak/TXT.git
+      97db822..6a6c65f  main -> main
+
+ 9. Создать файл preferences.txt
+    touch preferences.txt
+
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+     cat >> preferences.txt
+    I really like watching movies. My favorite genres are science fiction and travel movies.
+    It is difficult to name the most favorite.
+    When it comes to food, I love pizza, but what I like most is my wife's author's dish - chicken in sweet sauce.
+    I like to travel, but it's best to do it in the spring. Once upon a time, my family and I would definitely visit the United States.
+    The first place will be the Golden Gate Bridge in San Francisco.
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+    touch skills.txt
+    cat >> skills.txt
+1. Basic theory (What is testing, bug reports, documentation, types, methods, areas of testing, etc.) SDLC, STLC.
+2. What is a client-server architecture.
+3. HTTP Methods of requests to the server.
+4. HTTP server response codes.
+5. Structures of HTTP requests and responses.
+6. What is JSON, XML. Their structure.
+7. API testing via Postman (JS, API autotests).
+8. Removing and reading logs from an external server.
+9. Sniffing http web traffic via Charles and Fiddler.
+10. Dev Tools of web browsers (Google Chrome, FireFox).
+11. VPN. (How it works, why you need it, how to use it, tool options)
+12. Mobile testing.
+13. Feature iOS, Android, guidelines.
+14. Building iOS applications on XCode.
+15. Building Android applications on Android Studio.
+16. ADB (android device management).
+17. Setting up proxy and vpn on iOS and Android.
+18. Interception (sniffing) of mobile traffic via Charles and Fiddler on iOS and Android.
+19. Command line (terminal) Linux (copying, creating, viewing, moving files on servers without a graphical interface)
+20. Basics of bash scripting, automation of routine tasks on the server.
+21. Access to remote servers.
+22. SQL basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+23. Postgres database (installation, configuration and use).
+24. Non-relational database Redis (installation, configuration and use).
+25. Load testing in Jmeter.
+26. Scrum development methodology.
+27. Python. (Learning the basics. Creating a client-server application)
+
+ 12. Сделать коммит в одну строку.
+     git add . && git commit -m "add skills.txt and preferences.txt"
+ [main 8022f29] add preferences.txt
+  2 files changed, 2 insertions(+)
+  create mode 100644 skills.txt
+  create mode 100644 preferences.txt
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+     git push
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 2 threads
+  Compressing objects: 100% (4/4), done.
+  Writing objects: 100% (4/4), 1.40 KiB | 718.00 KiB/s, done.
+  Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+  To github.com:workpivtorak/TXT.git
+     d9b3c61..f356ec0  main -> main
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+    Зайти в репозиторій "TXT" та натиснути "Add file" 
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Відкрити файл bug_report натиснути "Edit this file"
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Відредагувати файл - додати баг репорт.
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Після редагування натиснути "Commit changes"
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+    git fetch
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), 3.24 KiB | 19.00 KiB/s, done.
+From github.com:workpivtorak/TXT
+   f3cb868..11916ad  main       -> origin/main
+git pull
+Updating f3cb868..11916ad
+Fast-forward
+ bug_report.txt | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 55 insertions(+)
+ create mode 100644 bug_report.txt
