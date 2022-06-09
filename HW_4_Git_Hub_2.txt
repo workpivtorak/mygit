@@ -1,1 +1,131 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+    git branch Postman
+- Jmeter
+    git branch Jmeter
+- CheckLists
+    git branch CheckLists
+- Bag Reports
+    git branch Bug_reports
+- SQL
+    git branch SQL
+- Charles
+    git branch Charles
+- Mobile testing
+    git branch Mobile_testing
 
+2. Запушить все ветки на внешний репозиторий
+    git push -u origin Postman Jmeter CheckLists Bug_reports SQL Charles Mobile_testing
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/mygit.git
+ * [new branch]      Postman -> Postman
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Bug_reports -> Bug_reports
+ * [new branch]      SQL -> SQL
+ * [new branch]      Charles -> Charles
+ * [new branch]      Mobile_testing -> Mobile_testing
+branch 'Postman' set up to track 'origin/Postman'.
+branch 'Jmeter' set up to track 'origin/Jmeter'.
+branch 'CheckLists' set up to track 'origin/CheckLists'.
+branch 'Bug_reports' set up to track 'origin/Bug_reports'.
+branch 'SQL' set up to track 'origin/SQL'.
+branch 'Charles' set up to track 'origin/Charles'.
+branch 'Mobile_testing' set up to track 'origin/Mobile_testing'.
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+   git checkout Bug_reports
+Switched to branch 'Bug_reports'
+Your branch is up to date with 'origin/Bug_reports'. 
+   cat >> bugreport_1.txt
+   та заповнити файл даними.
+
+4. Запушить структуру багрепорта на внешний репозиторий
+   git add .
+warning: LF will be replaced by CRLF in bugreport_1.txt.
+The file will have its original line endings in your working directory
+   git commit -m "add bug_report1.txt"
+[Bug_reports 920447e] add bug_report1.txt
+ 1 file changed, 56 insertions(+)
+ create mode 100644 bugreport_1.txt
+   git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.09 KiB | 1.09 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:workpivtorak/mygit.git
+   598359d..920447e  Bug_reports -> Bug_reports
+
+5. Вмержить ветку Bag Reports в Main 
+   git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+   git merge Bug_reports -m "merge bug_report1.txt to main branch"
+Updating 598359d..920447e
+Fast-forward (no commit created; -m option ignored)
+ bugreport_1.txt | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 56 insertions(+)
+ create mode 100644 bugreport_1.txt
+
+6. Запушить main на внешний репозиторий.
+   git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:workpivtorak/mygit.git
+   598359d..920447e  main -> main
+
+7. В ветке CheckLists набросать структуру чек листа.
+   git checkout CheckLists
+Switched to branch 'CheckLists'
+Your branch is up to date with 'origin/CheckLists'.
+    cat >> checklist1.txt
+   та заповнюємо даними файл.
+
+8. Запушить структуру на внешний репозиторий
+   git add .
+warning: LF will be replaced by CRLF in checklist1.txt.
+   git commit -m "add checklist1.txt"
+[CheckLists 5ffe995] add checklist1.txt
+ 1 file changed, 53 insertions(+)
+ create mode 100644 checklist1.txt
+   git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.41 KiB | 1.21 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:workpivtorak/mygit.git
+   598359d..5ffe995  CheckLists -> CheckLists
+   
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ Зайти на сайт: https://github.com/workpivtorak/mygit
+ Github пропонує прийняти новий запит на Pull requests.
+ Натискаємо "Compare & Pull requests"
+ Пишемо коміт та натискаємо "продовжити"
+ Потім натискаємо Megre pull request, git погодив злиття.
+     Pull request successfully merged and closed
+     You’re all set—the CheckLists branch can be safely deleted. 
+ 
+10. Синхронизировать Внешнюю и Локальную ветки Main
+    git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+    git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 715 bytes | 119.00 KiB/s, done.
+From github.com:workpivtorak/mygit
+   920447e..06bd3d2  main       -> origin/main
+    git pull
+Updating 920447e..06bd3d2
+Fast-forward
+ checklist1.txt | 53 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 53 insertions(+)
+ create mode 100644 checklist1.txt
