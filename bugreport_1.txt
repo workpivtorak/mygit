@@ -10,7 +10,7 @@ Steps:
 Expected results:
 Required data fields must be validated and the user notified of the defect
 Actual results:
-The fields "Name", "Phone" and "Order number" are not valid. The user can also enter an email with one character.
+The fields "Name", "Phone" and "Order number" are not valid. The user can also enter an email with one character
 Severity : Minor
 Priority : Low
 Type: logical
